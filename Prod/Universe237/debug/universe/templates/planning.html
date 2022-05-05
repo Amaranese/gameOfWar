@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Mission Planning</title>
+<style> body { background: url("../static/css/backgrounds/fighter.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: darken;
+    background-size: cover;
+
+}
+
+
+table {
+  border-collapse: collapse;
+  background-color: #778484;
+  width: 80%;
+}
+
+th {background-color: #0066ff; color: white;}
+th, td {
+  padding: 8px;
+  text-align: left;	
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#4287f5;}
+
+ </style>
+
+
+{% endblock %}
+{% block body %}
+<center><h1>  🎖️🎖️ Mission Planning 🎖️🎖️ </h1> </center>
+<center>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Might:  </b>  {{ myNation.might }} <br>
+<b>Rank:  </b>  {{ myNation.wLevel }} <br>
+<b>Credits:  </b>  ${{ myNation.wealth }} <br>
+<b>FirePower:  </b>  {{ myNation.firePower }} <br>
+</center>
+<br></br>
+
+
+
+{% if "disposition" in displayFlag %}
+<table style="width: 30%;">
+  <tr>
+    <th colspan="8">Disposition</th>
+  </tr>
+<tr>
+<td><b>Light Units</b></td>
+<td>{{ lightForces }}</td>
+
+<td><b>Core Division</b></td>
+<td>{{ coreForces }}</td>
+
+<td><b>Heavy Forces</b></td>
+<td>{{ heavyForces}}</td>
+	
+<td><b>Super Weapons</b></td>
+<td>{{ myWar.wEightAmount}}</td>
+</tr>
+</table>
+
+<br></br>
+{% endif%}
+
+
+
+
+{% if "review" in displayFlag %}
+<br></br>
+<table style="width: 30%;">
+<tr>
+	<th><b>Unit</b></th>
+	<th><b>Owned</b></th>
+</tr>
+<tr>
+<td><b>{{myWar.wOne}}</b></td>
+<td>{{myWar.wOneAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wTwo}}</b></td>
+<td>{{myWar.wTwoAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wThree}}</b></td>
+<td>{{myWar.wThreeAmount}}</td>
+</tr>
+	
+<tr>
+<td><b>{{myWar.wFour}}</b></td>
+<td>{{myWar.wFourAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wFive}}</b></td>
+<td>{{myWar.wFiveAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSix}}</b></td>
+<td>{{myWar.wSixAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSeven}}</b></td>
+<td>{{myWar.wSevenAmount}}</td>
+</tr>
+<tr>
+<td><b>{{myWar.wEight}}</b></td>
+<td>{{myWar.wEightAmount}}</td>
+</tr>
+
+</table>
+
+<br></br>
+
+{% endif%}
+
+
+{% if "friendship" in displayFlag %}
+<table style="width: 30%;">
+	<tr>
+		<th>Nation</th>
+		<th>Friendship</th>
+	</tr>
+
+{% for f in friends %}
+
+	<tr>
+		<td>{{ f.targetCountry }}</td>
+		<td>{{ f.level }} </td>
+
+
+{% endfor %}
+	</tr>
+</table>
+ {% endif%}
+ 
+
+<br></br>
+
+
+
+
+
+
+{% if "espionage" in displayFlag %}
+<center> <b style="color:blue;" >{{ planningMessage }} </b> </center> 
+<form method="post" action="/planning">
+	{% for nation in nations %}
+	{% if myNation.country not in nation.country  %}
+	 <button name="select" type="submit" value="{{nation.id}}">{{ nation.country }}</button>
+	{% endif%}
+    {% endfor %}
+ </div>
+{% endif%}
+
+
+
+
+
+<center> <b style="color:blue;" >{{ planningMessage }} </b> </center> 
+<br><br>
+<form method="post" action="/planning">
+		<button name="espionage" type="submit" value="espionage" style="height: 40px;">Espionage</button>
+		<button name="planning" type="submit" value="Covert" style="height: 40px;">Covert Operations</button>
+		<button name="planning" type="submit" value="Tactical" style="height: 40px;">Tactical Strike</button>
+		<button name="planning" type="submit" value="DeclareWar" style="height: 40px;">Declare War</button>
+ </div>
+
+<br></br>
+
+ 
+ <form method="post" action="/planning">
+		<button name="friendship" type="submit" value="friendship">Show alliances and friendship</button>
+		<button name="disposition" type="submit" value="disposition">Show Branch Summary</button>
+		<button name="review" type="submit" value="review">Detailed Forces Review</button>
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+
+ </div>
+ <br></br>
+<center>
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
