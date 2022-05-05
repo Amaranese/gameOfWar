@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Buy Menu</title>
+
+<style> body { background: url("../static/css/backgrounds/geo.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+}
+
+
+ </style>
+
+{% endblock %}
+
+{% block body %}
+
+<center style='color:white'><h1>  🌎 🌎 🌎  Invest in a Country  🌎 🌎 🌎 </h1> </center>
+
+<center style='color:white'>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Rank:    </b> {{ myNation.fLevel }}  <br>
+<b>Wealth:  </b>  ${{ myNation.wealth }} <br>
+</center>
+
+
+{% if "selected" in nationSelectedFlag %}
+<br></br>
+	<center>
+	<div class="form">
+	<form action="/investCountry" method="POST">
+		<input type="number" name="investForm" id="investForm">
+		<input type="submit" value="{{selectedOut.country}}">
+	</form>
+	<br>
+	<b> How much will you invest in  {{selectedOut.country}}? </b>
+	</div></center>
+
+	
+{% endif%}
+<center> <b style="color:white;" >{{ message }} </b> </center>
+<center> <b style="color:white;" >{{ infoMessage }} </b> </center>  
+
+{% if "selected" not in nationSelectedFlag %}
+<form method="post" action="/investCountry">
+	{% for nation in nations %}
+	{% if myNation.country not in nation.country  %}
+	 <button name="select" type="submit" value="{{nation.id}}">{{ nation.country }}</button>
+	{% endif%}
+    {% endfor %}
+ </div>
+{% endif%}
+  
+
+
+		<br></br>
+		<br></br>
+
+
+<form method="post" action="/investCountry">
+		<br></br>
+		<button name="information" type="submit" value="information">Information</button>
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+
+ </div>
+
+{% endblock %}
