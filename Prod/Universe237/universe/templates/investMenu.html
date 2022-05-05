@@ -1,0 +1,273 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Invest Menu</title>
+
+<style> body { background: url("../static/css/backgrounds/invest.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+}
+table {
+  border-collapse: collapse;
+  background-color: #778484;
+  width: 80%;
+}
+
+th {background-color: #0066ff; color: white;}
+th, td {
+  padding: 8px;
+  text-align: left;	
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#4287f5;}
+
+
+
+
+
+ </style>
+
+{% endblock %}
+
+{% block body %}
+<a style="text-decoration:none; color:black;" href="/">
+<center><h1> 📈 Invest Menu 📉</h1> </center>
+
+<center>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Rank:    </b> {{ myNation.fLevel }}  <br>
+<b>Wealth:  </b>  ${{ myNation.wealth }} <br>
+</center>
+
+</a>
+
+{% if "investCommodity" in displayFlag %}
+<br></br>
+	<center>
+	<div class="form">
+	<form action="/investMenu" method="POST">
+		<input type="number" name="investResourceForm" id="investResourceForm">
+		<input type="submit" value="{{commodity}}">
+	</form>
+	<br>
+	<b> How much will you invest in  {{commodity}}? </b>
+	</div></center>
+
+	
+{% endif%}
+<center> <b style="color:blue;" >{{ formMessage }} </b> </center> 
+
+
+{% if "friendship" in displayFlag %}
+<table style="width: 30%; color:white">
+	<tr>
+		<th>Nation</th>
+		<th>Friendship</th>
+	</tr>
+
+{% for f in friends %}
+
+	<tr>
+		<td>{{ f.targetCountry }}</td>
+		<td>{{ f.level }} </td>
+
+
+{% endfor %}
+	</tr>
+</table>
+ {% endif%}
+ 
+{% if "resources" in displayFlag %}
+ 
+
+<br>
+<table style="width: 30%; color:white">
+  <tr>
+    <th colspan="8">Inventory</th>
+  </tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ myNation.gold }}</td>
+
+<td><b>Rare Metals</b></td>
+<td>{{ myNation.rareMetals }}</td>
+
+<td><b>Gems</b></td>
+<td>{{ myNation.gems }}</td>
+	
+<td><b>Oil</b></td>
+<td>{{ myNation.oil }}</td>
+</tr>
+</table>
+<br></br><br>
+ 
+ {% endif%}
+
+ {% if "main" in displayFlag %}
+ 
+
+<br></br>
+<table style="width: 30%; color:white">
+<tr>
+	<th>Commodity</th>
+	<th>Price</th>
+	<th>PriceChange</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldPrice }}</td>
+<td>{{ PT.goldPriceChange }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsPrice }}</td>
+<td>{{ PT.rareMetalsPriceChange }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsPrice }}</td>
+<td>{{ PT.gemsPriceChange }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilPrice }}</td>
+<td>{{ PT.oilPriceChange }}</td>
+</tr>
+</table>
+
+ 
+<br></br>
+ {% endif%}
+
+ {% if "average" in displayFlag %}
+ 
+
+<br></br>
+<table style='color:white'>
+<tr>
+	<th>Commodity</th>
+	<th>Average Price</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldAverage }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsAverage }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsAverage }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilAverage }}</td>
+</tr>
+</table>
+
+ 
+<br></br>
+{% endif%}
+
+{% if "historical" in displayFlag %}
+ 
+
+<br></br>
+<table>
+<tr>
+	<th>Commodity</th>
+	<th>Historical Prices</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldHistory }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsHistory }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsHistory }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilHistory }}</td>
+</tr>
+</table>
+
+ 
+<br></br>
+{% endif%}
+
+{% if "stock" in displayFlag %}
+ 
+
+<br></br>
+<table>
+<tr>
+	<th>Commodity</th>
+	<th>Stock</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldStock }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsStock }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsStock }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilStock }}</td>
+</tr>
+</table>
+
+
+<br>
+{% endif%}
+
+
+        <center> <b style="color:red;" >{{ message }} </b> </center>
+<form method="post" action="/investMenu">
+		<button name="countries" type="submit" value="countries" style="height: 40px; background-color: #5b3475; color: white">Invest In Countries</button>
+		<button name="gold" type="submit" value="gold" style="height: 40px; background-color: #5b3475; color: white">Speculate on Gold</button>
+		<button name="rareMetals" type="submit" value="rareMetals" style="height: 40px; background-color: #5b3475; color: white">Speculate on Rare Metals</button>
+		<button name="gems" type="submit" value="gems" style="height: 40px; background-color: #5b3475; color: white">Speculate on Gems</button>
+		<button name="oil" type="submit" value="oil" style="height: 40px; background-color: #5b3475; color: white">Speculate on oil</button>
+ </div>
+
+		<br>
+
+
+
+<form method="post" action="/investMenu" >
+		<button name="resources" type="submit" value="resources">Show My Resources</button>
+		<button name="average" type="submit" value="average">Show Median Rates</button>
+		<button name="historical" type="submit" value="historical">Show Historical Prices</button>
+		<button name="friendship" type="submit" value="friendship">Show FriendShip Values</button>
+		<br></br>
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+
+ </div>
+
+{% endblock %}
