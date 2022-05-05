@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Welcome to the Weapons Depot</title>
+{% endblock %}
+{% block body %}
+<center><h1>  ⚔️ ⚔️ Welcome to the Weapons Depot 🔫🔫 </h1> </center>
+<center>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Might:  </b>  {{ myNation.might }} <br>
+<b>Rank:  </b>  {{ myNation.wLevel }} <br>
+<b>FirePower:  </b>  {{ myNation.firePower }} <br>
+</center>
+<br></br>
+<table style="width: 30%;">
+  <tr>
+    <th colspan="8">Disposition</th>
+  </tr>
+<tr>
+<td><b>Light Units</b></td>
+<td>{{ lightForces }}</td>
+
+<td><b>Core Division</b></td>
+<td>{{ coreForces }}</td>
+
+<td><b>Heavy Forces</b></td>
+<td>{{ heavyForces}}</td>
+	
+<td><b>Super Weapons</b></td>
+<td>{{ myWar.wEightAmount}}</td>
+</tr>
+</table>
+
+<br></br>
+{% if "combat" in displayFlag %}
+
+<br></br>
+<table style="width: 30%;">
+<tr>
+	<th><b>Unit</b></th>
+	<th><b>Owned</b></th>
+</tr>
+<tr>
+<td><b>{{myWar.wOne}}</b></td>
+<td>{{myWar.wOneAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wTwo}}</b></td>
+<td>{{myWar.wTwoAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wThree}}</b></td>
+<td>{{myWar.wThreeAmount}}</td>
+</tr>
+	
+<tr>
+<td><b>{{myWar.wFour}}</b></td>
+<td>{{myWar.wFourAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wFive}}</b></td>
+<td>{{myWar.wFiveAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSix}}</b></td>
+<td>{{myWar.wSixAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSeven}}</b></td>
+<td>{{myWar.wSevenAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wEight}}</b></td>
+<td>{{myWar.wEightAmount}}</td>
+</tr>
+
+</table>
+
+<br></br>
+{% endif%}
+
+
+
+<form method="post" action="/weaponsMenu">
+		<button name="build" type="submit" value="Build">Build</button>
+		<button name="scrap" type="submit" value="Scrap">Scrap</button>
+ </div>
+
+<br></br>
+<br></br>
+
+ 
+ <form method="post" action="/weaponsMenu">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+		<button name="review" type="submit" value="review">Detailed Forces Review</button>
+ </div>
+ <br></br>
+<center>
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
