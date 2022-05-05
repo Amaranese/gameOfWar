@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Trade Menu</title>
+
+<style> body { background: url("../static/css/backgrounds/finance.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: darken;
+    background-size: cover;
+
+}
+
+
+table {
+  border-collapse: collapse;
+  background-color: #778484;
+  width: 80%;
+}
+
+th {background-color: #0066ff; color: white;}
+th, td {
+  padding: 8px;
+  text-align: left;	
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#4287f5;}
+
+ </style>
+
+{% endblock %}
+
+{% block body %}
+
+<center style='color:white'><h1> 💎💎💎 Trade Menu 💎💎💎 </h1> </center>
+
+
+
+{% if "main" in displayFlag %}
+ {% for P in PT %}
+
+<br></br>
+<table style="width: 40%; color:white">
+<tr>
+	<th>Commodity</th>
+	<th>Price</th>
+	<th>PriceChange</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ P.goldPrice }}</td>
+<td>{{ P.goldPriceChange }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ P.rareMetalsPrice }}</td>
+<td>{{ P.rareMetalsPriceChange }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ P.gemsPrice }}</td>
+<td>{{ P.gemsPriceChange }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ P.oilPrice }}</td>
+<td>{{ P.oilPriceChange }}</td>
+</tr>
+</table>
+
+{% endfor%}
+<br></br>
+ {% endif%}
+
+ {% if "average" in displayFlag %}
+ {% for P in PT %}
+
+<br></br>
+<table style="width: 40%; color:white">
+<tr>
+	<th>Commodity</th>
+	<th>Average Price</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ P.goldAverage }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ P.rareMetalsAverage }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ P.gemsAverage }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ P.oilAverage }}</td>
+</tr>
+</table>
+
+{% endfor%}
+<br></br>
+{% endif%}
+
+{% if "historical" in displayFlag %}
+ {% for P in PT %}
+
+<br></br>
+<table style="width: 40%; color:white">
+<tr>
+	<th>Commodity</th>
+	<th>Historical Prices</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ P.goldHistory }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ P.rareMetalsHistory }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ P.gemsHistory }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ P.oilHistory }}</td>
+</tr>
+</table>
+
+{% endfor%}
+<br></br>
+{% endif%}
+
+{% if "stock" in displayFlag %}
+ {% for P in PT %}
+
+<br></br>
+<table style="width: 40%; color:white">
+<tr>
+	<th>Commodity</th>
+	<th>Stock</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ P.gold }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ P.rareMetals }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ P.gems }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ P.oil }}</td>
+</tr>
+</table>
+
+{% endfor%}
+<br></br>
+{% endif%}
+<form method="post" action="/tradeMenu">
+		<button name="buy" type="submit" value="buy" style="height: 40px; background-color: #5b3475; color: white"><b>Buy</b></button>
+		<button name="sell" type="submit" value="sell" style="height: 40px; background-color: #5b3475; color: white"><b>Sell</b></button>
+		<br></br>
+		<br></br>
+		<button name="average" type="submit" value="average" style="height: 40px; ">Show Median Rates</button>
+		<button name="historical" type="submit" value="historical" style="height: 40px; ">Show Historical Prices</button>
+		<button name="marketStock" type="submit" value="marketStock" style="height: 40px; ">Show Marketplace Stock</button>
+		<button name="mainMenu" type="submit" value="mainMenu" style="height: 40px; ">Return</button>
+
+ </div>
+
+{% endblock %}
