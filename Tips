@@ -1,0 +1,104 @@
+Level = int(0,inf)
+Era = ['stoneage',]
+
+
+
+**** NO AUTOMATIC PROMOTION (for science) ***** 
+
+***** RESEARCH - UNLOCK ABILITY TO MAKE TANK/REVOLVER ETC...****
+
+***** FIELDLEADER (determins env)****** 
+
+**** WEALFARE STATE VS DICTATORSHIPS ****
+
+*** ALLIANCE WAR ALLIES STEP IN (AUTOALLY) ***
+
+
+## IMPROVING AI
+*** END OF YEAR PIPE IN MORE OF THESE FACTORS (INCLUDING CROSS DOMAIN) ****
+if i don't, it becomes steered by default. (Evolution...)
+
+[Reset] tech at 10. 
+
+
+POLITICS - 0 IS IDEAL SCORE 
+
+IDEOLOGY IF > 0 
+DISPLAY POLITICAL
+
+
+
+
+loop each country
+def migration(balance,firepower,warFlag)
+
+
+
++10 .... DICTATORSHIP, LOSS OF FREEDOM, LOSS OF STAFF, LOSS OF ABILITY TO BUY STAFF
+0 AIM FOR ZERO 
+-10 .... LEADS TO WEALFARE, FAMIN, LOSS OF STAFF...
+
+
+
+
+ENVIRONMENT - Until 1 person, invents nuclear (then make it easier)
+Firest country gets advantage. 
+
+Rule 
+The first country to unlock tech level - gets lots of goodies (its expensive)
+Env array, reduces the barrier to get to.
+Less goodies. 
+(FieldLeadership) = 10% ++ politicalLeadership (frontere within timeframe )
+
+Incentive = people to try and be the first (academia & recruitment)
+if you become a field leader: Staff++
+
+
+
+
+[WEALFARE_STATE] - SCROUNGERS
+
+
+level SHOULD RESET - MAKE LEVELS DEPENDENT ON THE ERA 
+
+UPGRADE WEAPONS BASED UPON LEVEL 
+
+ERA DETERMINS WEAPON STRENGHT 
+
+
+
+1-10 = stone
+11-20 = bronze...
+
+
+
+RESEARCH POINTS
+
+TO RESEARCH A ITEM/WEAPON/LEVEL
+
+LV 1 = 1 RESEARCH POINTS
+
+To level up, you need spend research points. 
+
+
+
+**** Dynamic ****  
+
+reset at 10.
+
+
+ARRAY - 0,9
+LEVEL1,2,3
+
+
+
+
+
+IN EACH ERA
+
+WE HAVE TEN TECH LEVELS
+
+CORRESPONDS TO 10 WAR ITEMS (REVOLVER....) 
+
+
+STENGTH = WEAPON * ERA
