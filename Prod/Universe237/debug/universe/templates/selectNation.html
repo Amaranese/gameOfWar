@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Universe 237</title>
+
+<style> body { background: url("../static/css/backgrounds/minimal.jpeg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} </style>
+
+{% endblock %}
+
+
+
+{% block body %}
+    <center style="color:white"><h1>SELECT A NATION</h1></center>
+<form method="post" action="/selectNation">
+	{% for nation in nations %}
+	 <button name="select" type="submit" value="{{nation.id}}" style="width: 30%"><b>{{ nation.country }}</b></button>
+    {% endfor %}
+ </div>
+<br></br>
+{% endblock %}
