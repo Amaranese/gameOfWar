@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Finance Beuro</title>
+
+<style> body { background: url("../static/css/backgrounds/finance.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: darken;
+    background-size: cover;
+
+} </style>
+
+{% endblock %}
+{% block body %}
+<center style='color:white'><h1> 💰💰 Finance Beuro 😊💰💰 </h1> </center>
+<center style='color:white'>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Wealth:  </b>  ${{ myNation.wealth }} <br>
+<b>Level:  </b>  {{ myNation.fLevel }} <br>
+</center>
+
+
+<form method="post" action="/financeMenu">
+		<button name="invest" type="submit" value="invest" style="height: 40px;">Invest</button>
+		<button name="Trade" type="submit" value="Trade" style="height: 40px;">Trade</button>
+		<button name="Gamble" type="submit" value="Gamble" style="height: 40px;">Gamble</button>
+ </div>
+
+<br></br>
+<br></br>
+
+ 
+ <form method="post" action="/financeMenu">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+ </div>
+ <br></br>
+<center style='color:white'>
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
