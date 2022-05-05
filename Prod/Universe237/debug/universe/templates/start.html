@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Universe 237</title>
+
+<style> body { background: url("../static/css/backgrounds/minimal.jpeg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} </style>
+
+
+{% endblock %}
+{% block body %}
+<center style="color: white"><h1> Start Menu </h1></center>
+
+
+
+<form method="post" action="/start">
+		<button name="start" type="submit" value="start" style="height: 40px;"><b>START</b></button>
+		<button name="select_nation" type="submit" value="select_nation" style="height: 40px;"><b>SELECT NATION</b></button>
+		<button name="country_stats" type="submit" value="country_stats" style="height: 40px;"><b>COUNTRY STATS</b></button>
+		<button name="game_rules" type="submit" value="game_rules" style="height: 40px; background-color: black; color: white"><b>RULES</b></button>
+		<button name="credits" type="submit" value="credits" style="height: 40px; background-color: black; color: white"><b>CREDITS</b></button>
+		<button name="jukebox" type="submit" value="jukebox" style="height: 40px; background-color: black; color: white"><b>JUKEBOX</b></button>
+
+ </div>
+
+
+{% endblock %}
