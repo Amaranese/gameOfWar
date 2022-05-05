@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Round Complete </title>
+
+<style> body { background: url("../static/css/backgrounds/city.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} </style>
+
+{% if "allUpdates" in displayFlag %}
+<style> body { 
+
+	background: url("https://wallpaperplay.com/walls/full/6/8/b/44364.jpg");
+
+} </style>
+{%endif %}
+
+
+{% endblock %}
+{% block body %}
+<center style='color:white'><h1>  🔥🔥🔥 Round Completed! 🔥🔥🔥 </h1> </center>
+<center style='color:white'>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Wealth:  </b>  {{ myNation.wealth }} <br>
+</center>
+<br></br> </br>
+
+
+{% if "playerUpdates" in displayFlag %}
+<center style='color: white'>
+<div style='background: url("../static/css/backgrounds/simpleaqua.jpeg"); background-size: cover; width: 50%'>
+
+{% for f in DIALOGUE %}  
+
+{% if f.playerPrintLine is not none %}   
+<b>{{ f.playerPrintLine }}</b><br>
+
+{%endif %}
+{% endfor %}
+</center>
+</div>	
+{% endif %}
+
+
+
+{% if "AIUpdates" in displayFlag %}
+<center style='color: white;'>
+<div style='background: url("../static/css/backgrounds/blue.jpg"); background-size: cover; width: 50%'>
+
+{% for f in DIALOGUE %}  
+
+{% if f.AIPrintLine is not none %}   
+<b>{{ f.AIPrintLine }}</b><br>
+{%endif %}
+
+{% endfor %}
+
+</div>
+</center>
+{% endif %}
+
+
+{% if "allUpdates" in displayFlag %}
+<center style='color: white; ' >
+{% for f in DIALOGUE %}  
+
+{% if f.gamePrintLine is not none %}   
+<b style='color: white' >{{ f.gamePrintLine }}</b><br><br>
+{%endif %}
+
+{% endfor %}
+</center>
+{% endif %}
+
+
+
+<form method="post" action="/nextYear">
+		<button name="playerUpdates" type="submit" value="playerUpdates" style="height: 40px; background-color: #5b3475; color: white"><b>View My Updates</b></button>
+
+		<button name="AIUpdates" type="submit" value="AIUpdates" style="height: 40px; background-color: #5b3475; color: white"><b>View AI Updates</b></button>
+
+		<button name="allUpdates" type="submit" value="allUpdates" style="height: 40px; background-color: #5b3475; color: white"><b>Developer Updates</b></button>
+
+		<button name="mainMenu" type="submit" value="mainMenu" style="width: 20%; background-color: green; color: white"><b>Continue</b></button>
+ </div>
+
+<br></br>
+<br></br>
+
+ <br></br>
+<center style='color:white'>
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
