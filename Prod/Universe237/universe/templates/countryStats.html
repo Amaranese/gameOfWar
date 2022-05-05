@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Universe 237</title>
+
+<style> body { background: url("../static/css/backgrounds/chess.jpg"), url("../static/css/backgrounds/minimal.jpeg");
+    background-blend-mode: luminosity;
+
+} </style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+{% endblock %}
+
+
+
+
+{% block body %}
+
+
+{% for nation in nations %}
+<div style="display: inline-block; width: 25%; margin-left: 5%">
+<div style='width: 100%; margin-left: 5px'>
+<center><h1 style = ' color: white'> {{nation.country}} </h1></center>
+<div class="w3-dark-grey">
+  <div class="w3-green" style="height:24px;width:{{nation.aggression}}%"> Aggression</div>
+</div><br>
+
+<div class="w3-dark-grey">
+  <div class="w3-red" style="height:24px;width:{{nation.creativity}}%"> Creativity</div>
+</div><br>
+
+<div class="w3-dark-grey">
+  <div class="w3-blue" style="height:24px;width:{{nation.prudence}}%"> Prudence</div>
+</div><br>
+
+<div class="w3-dark-grey">
+  <div class="w3-orange" style="height:24px;width:{{nation.materialism}}%"> Materialism</div>
+</div>
+</div>
+</div>
+{% endfor %}
+
+
+<br></br><br></br><br></br>
+
+<center>
+ <form method="post" action="/countryStats">
+		<button name="return" type="submit" value="return">Return</button>
+ </div>
+ </center> 
+{% endblock %}
