@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>LeaderBoard</title>
+
+<style> body { background: url("../static/css/backgrounds/simpleaqua.jpeg");
+    background-color: rgba(255,255,255,0.3);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} 
+
+table {
+  border-collapse: collapse;
+  background-color: #778484;
+  width: 80%;
+}
+
+th {background-color: #990033; color: white;}
+th, td {
+  padding: 8px;
+  text-align: left;	
+  border-bottom: 1px solid #ddd;
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {background-color:#4287f5;}
+
+
+
+</style>
+{% endblock %}
+
+{% block body %}
+
+
+<center><h1>LeaderBoard</h1></center>
+
+<center>
+<div style="display: inline-block;"><form action="{{ url_for('LB') }}"><input type="submit" value="Main" /></form></div>
+
+<div style="display: inline-block;"><form action="{{ url_for('LBrank') }}"><input type="submit" value="Rank Overview" />
+</form></div>
+
+<div style="display: inline-block;"><form action="{{ url_for('LBscience') }}"><input type="submit" value="Science Overview" /></form></div>
+<div style="display: inline-block;"><form action="{{ url_for('LBwar') }}"><input type="submit" value="Weapons Overview" /></form></div>
+</center>
+
+<br></br>
+
+<table>
+	<tr>
+		<th>NATION</th>
+		<th>SCIENCE ERA</th>
+		<th>FINANCE RANK</th>
+		<th>POLITICS RANK</th>
+	</tr>
+ {% for nation in allNations %}
+<tr>
+	<td>{{nation.country}}</td>
+	<td>{{nation.era}}</td>
+	<td>{{nation.fLevel}}</td>
+	<td>{{nation.pLevel}}</td>
+</tr>
+{% endfor%}
+
+</table>		
+<br>
+<form method="post" action="/LeaderBoard">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+ </div>
+
+
+{% endblock %}
