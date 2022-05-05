@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Sell Menu</title>
+{% endblock %}
+
+{% block body %}
+
+<center><h1> 💰💰💰 Sell Sell Sell! 💰💰💰 </h1> </center>
+
+<center>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Rank:    </b> {{ myNation.fLevel }}  <br>
+<b>Wealth:  </b>  ${{ myNation.wealth }} <br>
+</center>
+
+
+<br></br>
+<table style="width: 30%;">
+  <tr>
+    <th colspan="8">Inventory</th>
+  </tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ myNation.gold }}</td>
+
+<td><b>Rare Metals</b></td>
+<td>{{ myNation.raremetals }}</td>
+
+<td><b>Gems</b></td>
+<td>{{ myNation.gems }}</td>
+	
+<td><b>Oil</b></td>
+<td>{{ myNation.oil }}</td>
+</tr>
+</table>
+<br></br><br></br>
+
+
+{% if "sellCommodity" in salesFlag %}
+
+	<center>
+	<div class="form">
+	<form action="/sellMenu" method="POST">
+		<input type="number" name="sellCommodity" id="sellCommodity">
+		<input type="submit" value="{{commodityFlag}}">
+	</form>
+	<br>
+	</div></center>
+
+	<br></br>
+{% endif%}
+
+        <center> <b style="color:red;" >{{ message }} </b> </center>
+<form method="post" action="/sellMenu">
+		<button name="selectCommodity" type="submit" value="gold">Gold</button>
+		<button name="selectCommodity" type="submit" value="rareMetals">Rare Metals</button>
+		<button name="selectCommodity" type="submit" value="gems">Gems</button>
+		<button name="selectCommodity" type="submit" value="oil">Oil</button>
+ </div>
+
+		<br></br>
+		<br></br>
+
+{% if "main" in displayFlag %}
+
+
+<br></br>
+<table style="width: 30%;">
+<tr>
+	<th>Commodity</th>
+	<th>Price</th>
+	<th>PriceChange</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldPrice }}</td>
+<td>{{ PT.goldPriceChange }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsPrice }}</td>
+<td>{{ PT.rareMetalsPriceChange }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsPrice }}</td>
+<td>{{ PT.gemsPriceChange }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilPrice }}</td>
+<td>{{ PT.oilPriceChange }}</td>
+</tr>
+</table>
+
+<br></br>
+ {% endif%}
+
+ {% if "average" in displayFlag %}
+
+<br></br>
+<table>
+<tr>
+	<th>Commodity</th>
+	<th>Average Price</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldAverage }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsAverage }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsAverage }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilAverage }}</td>
+</tr>
+</table>
+
+
+<br></br>
+{% endif%}
+
+{% if "historical" in displayFlag %}
+
+<br></br>
+<table>
+<tr>
+	<th>Commodity</th>
+	<th>Historical Prices</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldHistory }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsHistory }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsHistory }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilHistory }}</td>
+</tr>
+</table>
+
+
+<br></br>
+{% endif%}
+
+{% if "stock" in displayFlag %}
+
+<br></br>
+<table>
+<tr>
+	<th>Commodity</th>
+	<th>Stock</th>
+</tr>
+<tr>
+<td><b>Gold</b></td>
+<td>{{ PT.goldStock }}</td>
+</tr>
+
+<tr>
+<td><b>Rare Metals</b></td>
+<td>{{ PT.rareMetalsStock }}</td>
+</tr>
+
+<tr>
+<td><b>Gems</b></td>
+<td>{{ PT.gemsStock }}</td>
+</tr>
+	
+<tr>
+<td><b>Oil</b></td>
+<td>{{ PT.oilStock }}</td>
+</tr>
+</table>
+
+
+<br></br>
+{% endif%}
+
+<forareMetals method="post" action="/sellMenu">
+		<button name="average" type="submit" value="average">Show Median Rates</button>
+		<button name="historical" type="submit" value="historical">Show Historical Prices</button>
+		<button name="marketStock" type="submit" value="marketStock">Show Marketplace Stock</button>
+		<br></br>
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+
+ </div>
+
+{% endblock %}
