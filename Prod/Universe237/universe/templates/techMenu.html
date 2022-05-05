@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Welcome to the Technology Institute </title>
+<style> body { background: url("../static/css/backgrounds/tech.jpg");
+    background-color: rgba(255,255,255,0.1);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} </style>
+
+{% endblock %}
+{% block body %}
+<center style='color:white '><h1> ⚙️⚙️ Welcome to the Technology Institute ⚙️⚙️ </h1> </center>
+<center style='color: white; '>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Knowledge:  </b>  {{ myNation.KP }} <br>
+<b>RP:  </b>  {{ myNation.RP }} <br>
+<b>Era:  </b>  {{ myNation.era }} <br>
+<b>Level:  </b>  {{ myNation.tLevel }} <br>
+</center>
+
+
+<form method="post" action="/techMenu">
+
+		<button name="research" type="submit" value="research" style="height: 50px;">Research</button>
+		<button name="academia" type="submit" value="academia" style="height: 50px; width: 30%; background-color: black; color: white">Academia</button>
+ </div>
+
+<br></br>
+<br></br>
+
+ 
+ <form method="post" action="/techMenu">
+		<button name="techAssets" type="submit" value="techAssets">Show Tech Assets</button>
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+ </div>
+ <br></br>
+<center style="color:white">
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
