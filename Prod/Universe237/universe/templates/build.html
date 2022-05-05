@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Welcome to the Weapons Depot</title>
+{% endblock %}
+{% block body %}
+<center><h1>  ⚔️ ⚔️ Build and Manufacture new Units ⚔️ ⚔️ </h1> </center>
+<center>
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Might:  </b>  {{ myNation.might }} <br>
+<b>Rank:  </b>  {{ myNation.wLevel }} <br>
+<b>Credits:  </b>  ${{ myNation.wealth }} <br>
+<b>FirePower:  </b>  {{ myNation.firePower }} <br>
+</center>
+<br></br>
+
+{% if "disposition" in displayFlag %}
+<table style="width: 30%;">
+  <tr>
+    <th colspan="8">Disposition</th>
+  </tr>
+<tr>
+<td><b>Light Units</b></td>
+<td>{{ lightForces }}</td>
+
+<td><b>Core Division</b></td>
+<td>{{ coreForces }}</td>
+
+<td><b>Heavy Forces</b></td>
+<td>{{ heavyForces}}</td>
+	
+<td><b>Super Weapons</b></td>
+<td>{{ myWar.wEightAmount}}</td>
+</tr>
+</table>
+
+<br></br>
+{% endif%}
+
+
+{% if "review" in displayFlag %}
+<br></br>
+<table style="width: 30%;">
+<tr>
+	<th><b>Unit</b></th>
+	<th><b>Owned</b></th>
+</tr>
+<tr>
+<td><b>{{myWar.wOne}}</b></td>
+<td>{{myWar.wOneAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wTwo}}</b></td>
+<td>{{myWar.wTwoAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wThree}}</b></td>
+<td>{{myWar.wThreeAmount}}</td>
+</tr>
+	
+<tr>
+<td><b>{{myWar.wFour}}</b></td>
+<td>{{myWar.wFourAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wFive}}</b></td>
+<td>{{myWar.wFiveAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSix}}</b></td>
+<td>{{myWar.wSixAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSeven}}</b></td>
+<td>{{myWar.wSevenAmount}}</td>
+</tr>
+<tr>
+<td><b>{{myWar.wEight}}</b></td>
+<td>{{myWar.wEightAmount}}</td>
+</tr>
+
+</table>
+
+<br></br>
+
+{% endif%}
+
+
+<br></br>
+<table style="width: 30%;">
+<tr>
+	<th><b>Unit</b></th>
+	<th><b>Cost</b></th>
+
+{% for item in warPricing %}
+</tr>
+<tr>
+<td><b>{{item.unit_name}}</b></td>
+<td>${{item.price}}</td>
+</tr>
+{% endfor %}
+
+
+</table>
+<br></br>
+
+
+
+
+
+
+{% if "build" in displayFlag %}
+<br></br>
+	<center>
+	<div class="form">
+	<form action="/build" method="POST">
+		<input type="number" name="buildForm" id="buildForm">
+		<input type="submit" value="Enter Amount">
+	</form>
+	<br>
+	</div></center>
+
+
+<br></br>
+	
+{% endif%}
+<center> <b style="color:blue;" >{{ buildMessage }} </b> </center> 
+<br><br>
+<form method="post" action="/build">
+		<button name="build" type="submit" value="{{myWar.wOne}}">{{myWar.wOne}}</button>
+		<button name="build" type="submit" value="{{myWar.wTwo}}">{{myWar.wTwo}}</button>
+		<button name="build" type="submit" value="{{myWar.wThree}}">{{myWar.wThree}}</button>
+		<button name="build" type="submit" value="{{myWar.wFour}}">{{myWar.wFour}}</button>
+		<button name="build" type="submit" value="{{myWar.wFive}}">{{myWar.wFive}}</button>
+		<button name="build" type="submit" value="{{myWar.wSix}}">{{myWar.wSix}}</button>
+		<button name="build" type="submit" value="{{myWar.wSeven}}">{{myWar.wSeven}}</button>
+		<button name="build" type="submit" value="{{myWar.wEight}}">{{myWar.wEight}}</button>
+
+ </div>
+
+<br></br>
+<br></br>
+
+ 
+ <form method="post" action="/build">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+		<button name="disposition" type="submit" value="disposition">Show Branch Summary</button>
+		<button name="review" type="submit" value="review">Detailed Forces Review</button>
+ </div>
+ <br></br>
+<center>
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
