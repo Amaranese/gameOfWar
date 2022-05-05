@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>RESEARCH HUB</title>
+
+<style> body { background: url("../static/css/backgrounds/tech.jpg");
+    background-color: rgba(255,255,255,0.1);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} 
+
+
+
+table {
+  border-collapse: collapse;
+  background-color: #778484;
+  width: 80%;
+}
+
+th {background-color: #0066ff; color: white;}
+th, td {
+  padding: 8px;
+  text-align: left;	
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#4287f5;}
+
+
+
+
+</style>
+
+{% endblock %}
+{% block body %}
+<center style="color:white"><h1> 🔬🔬 RESEARCH HUB 🔬🔬 </h1> </center>
+<center style="color:white">
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Knowledge:  </b>  {{ myNation.KP }} <br>
+<b>RP:  </b>  {{ myNation.RP }} <br>
+<b>Era:  </b>  {{ myNation.era }} <br>
+<b>Level:  </b>  {{ myNation.tLevel }} <br>
+</center>
+
+<br></br>
+{% if "grant" not in displayFlag %}
+{% if "tech" not in displayFlag %}
+<table style="width: 30%; color:white">
+  <tr>
+    <th colspan="2"><center>Development Completion</center></th>
+  </tr>
+<tr>
+<td><b>{{ playerTech.one }}</b></td>
+<td>{{ playerTech.oneP }} %</td>
+</tr>
+<tr>
+<td><b>{{ playerTech.two }}</b></td>
+<td>{{ playerTech.twoP }} %</td>
+ </tr>
+ <tr>
+<td><b>{{ playerTech.three }}</b></td>
+<td>{{ playerTech.threeP }} %</td>
+ </tr>
+  <tr>
+<td><b>{{ playerTech.four }}</b></td>
+<td>{{ playerTech.fourP }} %</td>
+ </tr>
+   <tr>
+<td><b>{{ playerTech.five }}</b></td>
+<td>{{ playerTech.fiveP }} %</td>
+
+</tr>
+</table>
+{% endif%}
+{% endif%}
+
+
+
+<br></br>
+
+{% if "grant" in displayFlag %}
+<form method="post" action="/researchMenu">
+		<button name="intensity" type="submit" value="soft" style="width: 20%; background-color: green; color: white">Soft</button>
+
+		<button name="intensity" type="submit" value="medium" style="width: 20%; background-color: green; color: white">Medium</button>
+
+		<button name="intensity" type="submit" value="hard" style="width: 20%; background-color: green; color: white">Hard</button>
+
+		<button name="intensity" type="submit" value="overtime" style="width: 20%; background-color: green; color: white">Overtime</button>
+
+		<button name="intensity" type="submit" value="info" style="width: 20%; background-color: green; color: white">More Info</button>
+ </div>
+
+{% endif%}
+
+{% if "tech" in displayFlag %}
+<form method="post" action="/researchMenu">
+		<button name="dev" type="submit" value="{{ playerTech.one }},oneRp" style="width: 20%; background-color: blue; color: white">{{ playerTech.one }}</button>
+
+		<button name="dev" type="submit" value="{{ playerTech.two }},twoRp" style="width: 20%;background-color: blue; color: white">{{ playerTech.two }}</button>
+
+		<button name="dev" type="submit" value="{{ playerTech.three }},threeRp" style="width: 20%;background-color: blue; color: white">{{ playerTech.three }}</button>
+
+		<button name="dev" type="submit" value="{{ playerTech.four }},fourRp" style="width: 20%;background-color: blue; color: white">{{ playerTech.four }}</button>
+
+		<button name="dev" type="submit" value="{{ playerTech.five }},fiveRp" style="width: 20%;background-color: blue; color: white">{{ playerTech.five }}</button>
+ </div>
+
+{% endif%}
+
+{% if "info" in infoFlag %}
+<br>
+<div style="margin: auto; width: 50%;">
+<p>Research grants awards knowledge and research points (RP) that will be rewarded each round but comes at a cost of <b>wealth and time</b>. </p>
+<p><b style="color:purple;">[S] Soft       :</b> 2 rounds at no cost     - small bonus each round. </p>
+<p><b style="color:purple;">[M] Medium     :</b> 4 rounds at 10% wealth  - small rp & knowledge bonus each round. </p>
+<p><b style="color:purple;">[H] Hard       :</b> 6 rounds at 15% wealth  - medium rp and knowledge bonus each round. </p>
+<p><b style="color:purple;">[O] Overtime   :</b> 8 rounds at 25% wealth  - Large rp and knowledge bonus each round.</p>
+
+</div>
+{% endif%}
+<br></br>
+<center> <b style="color:white;" > <h2>{{ message }} </h2> </center> 
+
+
+{% if "tech" not in displayFlag %}
+{% if "grant" not in displayFlag %}
+<form method="post" action="/researchMenu">
+<button name="advance" type="submit" value="advance" style="height: 40px; background-color: #5b3475; color: white"><b>Advance Era</b></button>
+<button name="develop" type="submit" value="develop" style="height: 40px; background-color: #5b3475; color: white"><b>Develop Technology</b></button>
+
+<button name="grant" type="submit" value="grant" style="height: 40px; background-color: #5b3475; color: white"><b>Research Grant</b></button>
+
+<button name="purchase" type="submit" value="purchase" style="height: 40px; background-color: #5b3475; color: white"><b>Purchase Technology</b></button>
+
+ </div>
+{% endif %}
+{% endif %}
+<br></br>
+<br></br>
+
+ 
+ <form method="post" action="/researchMenu">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+ </div>
+ <br></br>
+<center style="color:white">
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
