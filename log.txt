@@ -1,0 +1,1404 @@
+
+USA chose to buy 
+------------------
+Credits    : 39
+oil purchased : 26
+Total Cost :312
+New total : 226
+
+USA chose to Invest in UK
+------------------
+Time Remaining : 3
+
+UK chose to Invest in USA
+------------------
+Time Remaining : 3
+
+UK chose to Invest in gold
+------------------
+Time Remaining : 3
+
+GERMANY Research Grant
+------------------
+Level Hard
+RP Bonus : +35
+KP Bonus : +12
+RP increased from 100 to 135
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+GERMANY Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+
+CHINA chose to train their Light Units
+================================
+Intensity: medium
+CHINA impressed the top leadership and won financial backing.
+Credits gained    : 19
+Might gained    : 10
+New Might Total : 101
+
+
+INDIA chose to train their Light Units
+================================
+Intensity: medium
+INDIA impressed the top leadership and won financial backing.
+Credits gained    : 24
+Might gained    : 10
+New Might Total : 98
+
+RUSSIA Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +12
+RP increased from 100 to 134
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+RUSSIA Research Update
+------------------
+Researched Item: Manufacturing Line
+Completion 27%
+
+ITALY Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +12
+RP increased from 100 to 134
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+ITALY Research Update
+------------------
+Researched Item: Glass Production
+Completion 14%
+
+SPAIN chose to buy 
+------------------
+Credits    : 125
+gold purchased : 2
+Total Cost :240
+New total : 62
+
+SPAIN chose to Invest in SOUTHAFRICA
+------------------
+Time Remaining : 3
+
+
+FRANCE chose to train their Light Units
+================================
+Intensity: hard
+FRANCE impressed the top leadership and won financial backing.
+Credits gained    : 32
+Might gained    : 15
+New Might Total : 91
+
+**BONUS** The brass have gifted FRANCE 61 Conscripts
+
+JAPAN Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +11
+RP increased from 100 to 134
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+JAPAN Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+
+BRAZIL chose to train their Light Units
+================================
+Intensity: medium
+BRAZIL impressed the top leadership and won financial backing.
+Credits gained    : 22
+Might gained    : 8
+New Might Total : 78
+
+SOUTHKOREA chose to build 
+------------------
+Conscripts to build : 20
+Build Time Remaining : 1
+
+GERMANY has been infiltrated by an unknown advisary
+===========================================
+GERMANY current actions sabotaged and will miss a round.
+
+
+SOUTHAFRICA chose to train their Light Units
+================================
+Intensity: hard
+SOUTHAFRICA impressed the top leadership and won financial backing.
+Credits gained    : 26
+Might gained    : 10
+New Might Total : 74
+
+**BONUS** The brass have gifted SOUTHAFRICA 17 Conscripts
+
+SOUTHAFRICA chose to build 
+------------------
+Conscripts to build : 18
+Build Time Remaining : 1
+
+PAKISTAN Research Grant
+------------------
+Level Hard
+RP Bonus : +33
+KP Bonus : +11
+RP increased from 100 to 133
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+PAKISTAN Research Update
+------------------
+Researched Item: Manufacturing Line
+Completion 27%
+
+
+INDONESIA chose to train their Light Units
+================================
+Intensity: hard
+INDONESIA impressed the top leadership and won financial backing.
+Credits gained    : 30
+Might gained    : 9
+New Might Total : 67
+
+**BONUS** The brass have gifted INDONESIA 51 Conscripts
+
+PAKISTAN has been infiltrated by an unknown advisary
+===========================================
+PAKISTAN current actions sabotaged and will miss a round.
+
+NIGERIA Research Grant
+------------------
+Level Hard
+RP Bonus : +33
+KP Bonus : +11
+RP increased from 100 to 133
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+
+MEXICO chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 2
+New Might Total : 54
+
+
+EGYPT chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 2
+New Might Total : 51
+
+VIETNAM Research Grant
+------------------
+Level Hard
+RP Bonus : +32
+KP Bonus : +10
+RP increased from 100 to 132
+KP increased from 0 to 10
+Rounds Remaining : 5
+
+VIETNAM Research Update
+------------------
+Researched Item: Wool
+Completion 52%
+
+
+IRAN chose to train their Light Units
+================================
+Intensity: medium
+IRAN impressed the top leadership and won financial backing.
+Credits gained    : 12
+Might gained    : 4
+New Might Total : 47
+
+KENYA Research Grant
+------------------
+Level Hard
+RP Bonus : +32
+KP Bonus : +10
+RP increased from 100 to 132
+KP increased from 0 to 10
+Rounds Remaining : 5
+
+KENYA Research Update
+------------------
+Researched Item: Wool
+Completion 52%
+
+
+USA chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 5
+New Might Total : 105
+
+++++++++++++++++++++++++++++++++++++++++++
+UK has advanced to the INFORMATION AGE
+++++++++++++++++++++++++++++++++++++++++++
+
+UK gained 10% knowledge.
+499 units converted to +499 might.
+UK now has INFORMATION AGE level military capabilities.
+UK levelled up! New War rank is Lieutenant
+
+
+GERMANY chose to train their Light Units
+================================
+Intensity: medium
+GERMANY impressed the top leadership and won financial backing.
+Credits gained    : 24
+Might gained    : 13
+New Might Total : 107
+
+CHINA Research Grant
+------------------
+Level Hard
+RP Bonus : +35
+KP Bonus : +12
+RP increased from 100 to 135
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+CHINA Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+INDIA chose to build 
+------------------
+Conscripts to build : 37
+Build Time Remaining : 1
+
+CHINA has been infiltrated by an unknown advisary
+===========================================
+CHINA current actions sabotaged and will miss a round.
+
+
+RUSSIA chose to train their Light Units
+================================
+Intensity: hard
+RUSSIA impressed the top leadership and won financial backing.
+Credits gained    : 43
+Might gained    : 13
+New Might Total : 98
+
+**BONUS** The brass have gifted RUSSIA 2 Conscripts
+
+VIETNAM has been infiltrated by an unknown advisary
+===========================================
+VIETNAM current actions sabotaged and will miss a round.
+
+
+ITALY chose to gamble
+---------------------
+ITALY gained  +15
+Gambled         : 345
+Winnings        : 360
+Finance credits : 439
+
+ITALY chose to Invest in SOUTHKOREA
+------------------
+Time Remaining : 3
+
+SPAIN chose to Invest in PAKISTAN
+------------------
+Time Remaining : 3
+
+FRANCE Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +12
+RP increased from 100 to 125
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+FRANCE Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+JAPAN chose to buy 
+------------------
+Credits    : 203
+gems purchased : 1
+Total Cost :250
+New total : 51
+
+JAPAN chose to Invest in NIGERIA
+------------------
+Time Remaining : 3
+
+
+BRAZIL chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 3
+New Might Total : 73
+
+SOUTHKOREA chose to buy 
+------------------
+Credits    : 358
+raremetals purchased : 1
+Total Cost :60
+New total : 56
+
+SOUTHKOREA chose to Invest in KENYA
+------------------
+Time Remaining : 3
+
+SOUTHAFRICA Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +11
+RP increased from 100 to 125
+KP increased from 0 to 11
+Rounds Remaining : 3
+
+SOUTHAFRICA Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+PAKISTAN Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +11
+RP increased from 100 to 125
+KP increased from 0 to 11
+Rounds Remaining : 3
+
+PAKISTAN Research Update
+------------------
+Researched Item: Manufacturing Line
+Completion 25%
+
+INDONESIA chose to buy 
+------------------
+Credits    : 81
+oil purchased : 15
+Total Cost :180
+New total : 85
+
+INDONESIA chose to Invest in KENYA
+------------------
+Time Remaining : 3
+
+
+NIGERIA chose to gamble
+---------------------
+NIGERIA gained  +5
+Gambled         : 109
+Winnings        : 114
+Finance credits : 350
+
+NIGERIA chose to Invest in PAKISTAN
+------------------
+Time Remaining : 3
+
+MEXICO chose to Invest in IRAN
+------------------
+Time Remaining : 3
+
+EGYPT chose to pass
+
+EGYPT chose to Invest in KENYA
+------------------
+Time Remaining : 3
+VIETNAM sabotaged, skipping round.
+
+
+IRAN chose to gamble
+---------------------
+IRAN gained  +25
+Gambled         : 351
+Winnings        : 376
+Finance credits : 430
+
+IRAN chose to pass
+
+KENYA chose to buy 
+------------------
+Credits    : 95
+oil purchased : 11
+Total Cost :132
+New total : 111
+
+KENYA chose to Invest in VIETNAM
+------------------
+Time Remaining : 3
+
+
+USA chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 6
+New Might Total : 111
+
+UK Research Grant
+------------------
+Level Medium
+RP Bonus : +27
+KP Bonus : +12
+RP increased from 100 to 127
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+UK Research Update
+------------------
+Researched Item: Digital Electronics
+Completion 4%
+UK levelled up! New War rank is Captain
+
+GERMANY Research Grant
+------------------
+Level Medium
+RP Bonus : +27
+KP Bonus : +13
+RP increased from 100 to 127
+KP increased from 0 to 13
+Rounds Remaining : 3
+
+GERMANY Research Update
+------------------
+Researched Item: Electricity
+Completion 50%
+CHINA sabotaged, skipping round.
+
+INDIA Build complete 
+------------------
+Conscripts units built: 37
+Conscripts total : 533
+Might gained : 17
+Might total  : 109
+
+INDIA Research Grant
+------------------
+Level Hard
+RP Bonus : +23
+KP Bonus : +3
+RP increased from 100 to 123
+KP increased from 0 to 3
+Rounds Remaining : 5
+
+INDIA Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+
+RUSSIA chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 8
+New Might Total : 111
+
+ITALY chose to Invest in SOUTHKOREA
+------------------
+Time Remaining : 2
+
+ITALY Research Grant
+------------------
+Level Hard
+RP Bonus : +33
+KP Bonus : +11
+RP increased from 100 to 133
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+ITALY Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+SPAIN chose to Invest in PAKISTAN
+------------------
+Time Remaining : 2
+
+SPAIN chose to pass
+
+FRANCE Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +13
+RP increased from 100 to 125
+KP increased from 12 to 25
+Rounds Remaining : 2
+
+FRANCE Research Update
+------------------
+Researched Item: Wool
+
+######Wool Research Complete! #########
+
+Knowledge boosted by 100 points.
+
+Completion 100%
+
+FRANCE chose to buy 
+------------------
+Credits    : 289
+oil purchased : 4
+Total Cost :52
+New total : 44
+
+FRANCE chose to Invest in PAKISTAN
+------------------
+Time Remaining : 3
+
+JAPAN chose to Invest in NIGERIA
+------------------
+Time Remaining : 2
+
+JAPAN chose to buy 
+------------------
+Credits    : 83
+gold purchased : 1
+Total Cost :120
+New total : 61
+
+
+BRAZIL chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 5
+New Might Total : 78
+
+CHINA has been infiltrated by an unknown advisary
+===========================================
+CHINA current actions sabotaged and will miss a round.
+
+SOUTHKOREA chose to Invest in KENYA
+------------------
+Time Remaining : 2
+
+SOUTHKOREA chose to buy 
+------------------
+Credits    : 345
+oil purchased : 1
+Total Cost :13
+New total : 56
+
+SOUTHAFRICA Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +12
+RP increased from 100 to 125
+KP increased from 11 to 23
+Rounds Remaining : 2
+
+SOUTHAFRICA Research Update
+------------------
+Researched Item: Wool
+
+######Wool Research Complete! #########
+
+Knowledge boosted by 100 points.
+
+Completion 100%
+
+SOUTHAFRICA chose to Invest in SPAIN
+------------------
+Time Remaining : 3
+
+PAKISTAN Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +12
+RP increased from 100 to 125
+KP increased from 11 to 23
+Rounds Remaining : 2
+
+PAKISTAN Research Update
+------------------
+Researched Item: Manufacturing Line
+Completion 50%
+
+
+PAKISTAN chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 1
+New Might Total : 62
+
+INDONESIA chose to Invest in KENYA
+------------------
+Time Remaining : 2
+
+INDONESIA Research Update
+------------------
+Researched Item: Wool
+Completion 40%
+
+NIGERIA chose to Invest in PAKISTAN
+------------------
+Time Remaining : 2
+
+
+NIGERIA chose to train their Light Units
+================================
+Intensity: hard
+NIGERIA impressed the top leadership and won financial backing.
+Credits gained    : 28
+Might gained    : 9
+New Might Total : 64
+
+**BONUS** The brass have gifted NIGERIA 96 Conscripts
+
+MEXICO chose to Invest in IRAN
+------------------
+Time Remaining : 2
+
+
+MEXICO chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 1
+New Might Total : 53
+
+EGYPT chose to Invest in KENYA
+------------------
+Time Remaining : 2
+
+EGYPT chose to buy 
+------------------
+Credits    : 265
+raremetals purchased : 1
+Total Cost :62
+New total : 86
+
+VIETNAM Research Grant
+------------------
+Level Hard
+RP Bonus : +32
+KP Bonus : +10
+RP increased from 100 to 132
+KP increased from 0 to 10
+Rounds Remaining : 5
+
+VIETNAM Research Update
+------------------
+Researched Item: Wool
+Completion 52%
+
+
+IRAN chose to train their Light Units
+================================
+Intensity: hard
+IRAN impressed the top leadership and won financial backing.
+Credits gained    : 43
+Might gained    : 8
+New Might Total : 51
+
+**BONUS** The brass have gifted IRAN 62 Conscripts
+
+KENYA chose to Invest in VIETNAM
+------------------
+Time Remaining : 2
+
+KENYA Research Update
+------------------
+Researched Item: Wool
+Completion 40%
+
+USA chose to buy 
+------------------
+Credits    : 204
+oil purchased : 19
+Total Cost :228
+New total : 219
+
+USA chose to Invest in SPAIN
+------------------
+Time Remaining : 3
+
+UK Research Grant
+------------------
+Level Hard
+RP Bonus : +35
+KP Bonus : +12
+RP increased from 100 to 135
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+GERMANY Research Grant
+------------------
+Level Hard
+RP Bonus : +35
+KP Bonus : +12
+RP increased from 100 to 135
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+GERMANY Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+CHINA Research Grant
+------------------
+Level Medium
+RP Bonus : +26
+KP Bonus : +12
+RP increased from 100 to 126
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+CHINA Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+INDIA chose to Invest in SPAIN
+------------------
+Time Remaining : 3
+
+
+RUSSIA chose to train their Light Units
+================================
+Intensity: medium
+RUSSIA impressed the top leadership and won financial backing.
+Credits gained    : 24
+Might gained    : 8
+New Might Total : 93
+
+ITALY chose to Invest in IRAN
+------------------
+Time Remaining : 3
+
+SPAIN chose to build 
+------------------
+Conscripts to build : 20
+Build Time Remaining : 1
+
+FRANCE Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +12
+RP increased from 100 to 134
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+FRANCE Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+JAPAN chose to buy 
+------------------
+Credits    : 239
+oil purchased : 2
+Total Cost :24
+New total : 47
+
+JAPAN chose to Invest in SPAIN
+------------------
+Time Remaining : 3
+
+BRAZIL Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +11
+RP increased from 100 to 134
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+BRAZIL Research Update
+------------------
+Researched Item: Electricity
+Completion 54%
+
+
+SOUTHKOREA chose to train their Light Units
+================================
+Intensity: hard
+SOUTHKOREA impressed the top leadership and won financial backing.
+Credits gained    : 36
+Might gained    : 11
+New Might Total : 78
+
+**BONUS** The brass have gifted SOUTHKOREA 55 Conscripts
+
+SOUTHKOREA chose to build 
+------------------
+Conscripts to build : 8
+Build Time Remaining : 1
+
+SOUTHAFRICA chose to buy 
+------------------
+Credits    : 307
+oil purchased : 1
+Total Cost :12
+New total : 61
+
+SOUTHAFRICA chose to Invest in INDONESIA
+------------------
+Time Remaining : 3
+
+
+PAKISTAN chose to train their Light Units
+================================
+Intensity: hard
+PAKISTAN impressed the top leadership and won financial backing.
+Credits gained    : 30
+XXXX UNITS LOST IN TRAINING - DRILLED TO HARD XXXX
+Conscripts lost in combat excercise 
+122 Conscripts lost
+365 remaining
+Might gained    : 11
+New Might Total : 72
+
+**BONUS** The brass have gifted PAKISTAN 43 Conscripts
+
+
+INDONESIA chose to train their Light Units
+================================
+Intensity: hard
+INDONESIA impressed the top leadership and won financial backing.
+Credits gained    : 30
+Might gained    : 9
+New Might Total : 67
+
+**BONUS** The brass have gifted INDONESIA 99 Conscripts
+
+
+NIGERIA chose to gamble
+---------------------
+NIGERIA gained  +70
+Gambled         : 122
+Winnings        : 192
+Finance credits : 383
+
+NIGERIA chose to Invest in CHINA
+------------------
+Time Remaining : 3
+
+
+MEXICO chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 1
+New Might Total : 53
+
+MEXICO chose to build 
+------------------
+Conscripts to build : 12
+Build Time Remaining : 1
+
+EGYPT Research Grant
+------------------
+Level Hard
+RP Bonus : +32
+KP Bonus : +10
+RP increased from 100 to 132
+KP increased from 0 to 10
+Rounds Remaining : 5
+
+EGYPT Research Update
+------------------
+Researched Item: Cement
+Completion 6%
+
+VIETNAM chose to Invest in SOUTHKOREA
+------------------
+Time Remaining : 3
+
+IRAN Research Grant
+------------------
+Level Hard
+RP Bonus : +32
+KP Bonus : +10
+RP increased from 100 to 132
+KP increased from 0 to 10
+Rounds Remaining : 5
+
+KENYA Research Grant
+------------------
+Level Hard
+RP Bonus : +32
+KP Bonus : +10
+RP increased from 100 to 132
+KP increased from 0 to 10
+Rounds Remaining : 5
+
+KENYA Research Update
+------------------
+Researched Item: Electricity
+Completion 52%
+
+USA chose to build 
+------------------
+Conscripts to build : 29
+Build Time Remaining : 1
+
+USA chose to scrap
+------------------
+Conscripts to scrap : 4
+Might lost    : -1
+Might total   : 99
+USA was paid 40
+Credits total : 250
+
+
+GERMANY chose to train their Light Units
+================================
+Intensity: medium
+GERMANY impressed the top leadership and won financial backing.
+Credits gained    : 20
+Might gained    : 8
+New Might Total : 102
+
+CHINA Research Grant
+------------------
+Level Medium
+RP Bonus : +26
+KP Bonus : +12
+RP increased from 100 to 126
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+CHINA Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+INDIA Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +12
+RP increased from 100 to 134
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+
+RUSSIA chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 7
+New Might Total : 92
+
+
+ITALY chose to gamble
+---------------------
+ITALY gained  +66
+Gambled         : 180
+Winnings        : 246
+Finance credits : 296
+
+ITALY chose to buy 
+------------------
+Credits    : 296
+gold purchased : 2
+Total Cost :240
+New total : 62
+
+
+SPAIN chose to train their Light Units
+================================
+Intensity: hard
+SPAIN impressed the top leadership and won financial backing.
+Credits gained    : 33
+Might gained    : 13
+New Might Total : 92
+
+**BONUS** The brass have gifted SPAIN 7 Conscripts
+
+FRANCE Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +12
+RP increased from 100 to 125
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+FRANCE Research Update
+------------------
+Researched Item: Electricity
+Completion 50%
+
+JAPAN Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +11
+RP increased from 100 to 134
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+JAPAN Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+
+BRAZIL chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 5
+New Might Total : 75
+
+IRAN has been infiltrated by an unknown advisary
+===========================================
+IRAN current actions sabotaged and will miss a round.
+
+SOUTHKOREA Research Grant
+------------------
+Level Hard
+RP Bonus : +33
+KP Bonus : +11
+RP increased from 100 to 133
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+SOUTHKOREA Research Update
+------------------
+Researched Item: Cement
+Completion 7%
+
+SOUTHAFRICA Research Grant
+------------------
+Level Hard
+RP Bonus : +33
+KP Bonus : +11
+RP increased from 100 to 133
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+
+PAKISTAN chose to gamble
+---------------------
+PAKISTAN gained  +110
+Gambled         : 380
+Winnings        : 490
+Finance credits : 527
+
+PAKISTAN chose to Invest in UK
+------------------
+Time Remaining : 3
+
+
+INDONESIA chose to train their Light Units
+================================
+Intensity: hard
+INDONESIA impressed the top leadership and won financial backing.
+Credits gained    : 26
+Might gained    : 10
+New Might Total : 68
+
+**BONUS** The brass have gifted INDONESIA 97 Conscripts
+
+NIGERIA Research Grant
+------------------
+Level Hard
+RP Bonus : +33
+KP Bonus : +11
+RP increased from 100 to 133
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+NIGERIA Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+MEXICO chose to buy 
+------------------
+Credits    : 183
+raremetals purchased : 1
+Total Cost :60
+New total : 81
+
+MEXICO chose to Invest in GERMANY
+------------------
+Time Remaining : 3
+
+EGYPT Research Grant
+------------------
+Level Medium
+RP Bonus : +24
+KP Bonus : +10
+RP increased from 100 to 124
+KP increased from 0 to 10
+Rounds Remaining : 3
+
+EGYPT Research Update
+------------------
+Researched Item: Manufacturing Line
+Completion 25%
+
+
+VIETNAM chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 0
+New Might Total : 46
+IRAN sabotaged, skipping round.
+
+
+KENYA chose to gamble
+---------------------
+KENYA gained  +8
+Gambled         : 120
+Winnings        : 128
+Finance credits : 294
+
+KENYA chose to Invest in SOUTHKOREA
+------------------
+Time Remaining : 3
+
+USA Research Grant
+------------------
+Level Hard
+RP Bonus : +35
+KP Bonus : +12
+RP increased from 100 to 135
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+USA Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+
+UK chose to gamble
+---------------------
+UK gained  +100
+Gambled         : 100
+Winnings        : 200
+Finance credits : 595
+
+
+GERMANY chose to train their Light Units
+================================
+Intensity: hard
+GERMANY impressed the top leadership and won financial backing.
+Credits gained    : 24
+Might gained    : 17
+New Might Total : 111
+
+**BONUS** The brass have gifted GERMANY 8 Conscripts
+
+CHINA chose to buy 
+------------------
+Credits    : 326
+raremetals purchased : 2
+Total Cost :120
+New total : 17
+
+CHINA chose to Invest in SOUTHAFRICA
+------------------
+Time Remaining : 3
+
+INDIA Research Grant
+------------------
+Level Medium
+RP Bonus : +26
+KP Bonus : +12
+RP increased from 100 to 126
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+INDIA Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+RUSSIA Research Grant
+------------------
+Level Hard
+RP Bonus : +34
+KP Bonus : +12
+RP increased from 100 to 134
+KP increased from 0 to 12
+Rounds Remaining : 5
+
+RUSSIA Research Update
+------------------
+Researched Item: Electricity
+Completion 54%
+
+ITALY Research Grant
+------------------
+Level Medium
+RP Bonus : +26
+KP Bonus : +12
+RP increased from 100 to 126
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+ITALY Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+SPAIN Research Grant
+------------------
+Level Medium
+RP Bonus : +25
+KP Bonus : +12
+RP increased from 100 to 125
+KP increased from 0 to 12
+Rounds Remaining : 3
+
+SPAIN Research Update
+------------------
+Researched Item: Wool
+Completion 50%
+
+
+FRANCE chose to gamble
+---------------------
+FRANCE lost  -137
+Gambled         : 406
+Winnings        : 269
+Finance credits : 323
+
+FRANCE chose to pass
+
+JAPAN chose to build 
+------------------
+Conscripts to build : 4
+Build Time Remaining : 1
+
+
+BRAZIL chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 4
+New Might Total : 74
+
+
+SOUTHKOREA chose to gamble
+---------------------
+SOUTHKOREA gained  +37
+Gambled         : 46
+Winnings        : 83
+Finance credits : 422
+
+SOUTHKOREA chose to buy 
+------------------
+Credits    : 422
+raremetals purchased : 1
+Total Cost :60
+New total : 56
+
+SOUTHAFRICA Research Grant
+------------------
+Level Hard
+RP Bonus : +33
+KP Bonus : +11
+RP increased from 100 to 133
+KP increased from 0 to 11
+Rounds Remaining : 5
+
+SOUTHAFRICA Research Update
+------------------
+Researched Item: Wool
+Completion 54%
+
+
+PAKISTAN chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 1
+New Might Total : 62
+
+INDONESIA has been infiltrated by an unknown advisary
+===========================================
+INDONESIA current actions sabotaged and will miss a round.
+INDONESIA sabotaged, skipping round.
+
+
+NIGERIA chose to gamble
+---------------------
+NIGERIA gained  +262
+Gambled         : 333
+Winnings        : 595
+Finance credits : 630
+
+NIGERIA chose to Invest in BRAZIL
+------------------
+Time Remaining : 3
+
+
+MEXICO chose to train their Light Units
+================================
+Intensity: soft
+Might gained    : 1
+New Might Total : 53
+
+USA has been infiltrated by an unknown advisary
+===========================================
+USA current actions sabotaged and will miss a round.
+
+EGYPT Research Grant
+------------------
+Level Medium
+RP Bonus : +24
+KP Bonus : +10
+RP increased from 100 to 124
+KP increased from 0 to 10
+Rounds Remaining : 3
+
+EGYPT Research Update
+------------------
+Researched Item: Electricity
+Completion 50%
+
+VIETNAM chose to buy 
+------------------
+Credits    : 225
+gold purchased : 1
+Total Cost :120
+New total : 61
+
+VIETNAM chose to Invest in ITALY
+------------------
+Time Remaining : 3
+
+IRAN Research Grant
+------------------
+Level Hard
+RP Bonus : +32
+KP Bonus : +10
+RP increased from 100 to 132
+KP increased from 0 to 10
+Rounds Remaining : 5
+
+IRAN Research Update
+------------------
+Researched Item: Wool
+Completion 52%
+
+
+KENYA chose to train their Light Units
+================================
+Intensity: hard
+KENYA impressed the top leadership and won financial backing.
+Credits gained    : 24
+Might gained    : 8
+New Might Total : 48
+
+**BONUS** The brass have gifted KENYA 22 Conscripts
