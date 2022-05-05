@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Welcome to the Ministry of War </title>
+
+<style> body { background: url("../static/css/backgrounds/war.jpg");
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} </style>
+
+
+{% endblock %}
+
+
+
+
+{% block body %}
+<center style="color: black"><h1>  🎖️🎖️ Welcome to the Ministry of War 🎖️🎖️ </h1> </center>
+<center style="color: black">
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Might:  </b>  {{ myNation.might }} <br>
+<b>Rank:  </b>  {{ myNation.wLevel }} <br>
+<b>FirePower:  </b>  {{ myNation.firePower }} <br>
+</center>
+
+
+<form method="post" action="/warMenu">
+		<button name="combat" type="submit" value="combat" style="height: 40px;"><b>Combat Manevres</b></button>
+		<button name="weapons" type="submit" value="weapons" style="height: 40px;"><b>Weapons</b></button>
+		<button name="offensive" type="submit" value="offensive" style="height: 40px;"><b>Offensive Missions</b></button>
+ </div>
+
+<br></br>
+<br></br>
+
+ 
+ <form method="post" action="/warMenu">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+ </div>
+ <br></br>
+<center>
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
