@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>LeaderBoard</title>
+
+
+<style> body { background: url("../static/css/backgrounds/simpleaqua.jpeg");
+    background-color: rgba(255,255,255,0.3);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} 
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  width: 80%;
+}
+
+th {background-color: #9900ff; color: white;}
+th, td {
+  padding: 8px;
+  text-align: left;	
+  border-bottom: 1px solid #ddd;
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {background-color:#4287f5;}
+
+
+
+</style>
+
+
+{% endblock %}
+
+{% block body %}
+
+
+<center><h1>LeaderBoard</h1></center>
+
+<center>
+<div style="display: inline-block;"><form action="{{ url_for('LB') }}"><input type="submit" value="Main" /></form></div>
+
+<div style="display: inline-block;"><form action="{{ url_for('LBrank') }}"><input type="submit" value="Rank Overview" />
+</form></div>
+
+<div style="display: inline-block;"><form action="{{ url_for('LBscience') }}"><input type="submit" value="Science Overview" /></form></div>
+
+<div style="display: inline-block;"><form action="{{ url_for('LBwar') }}"><input type="submit" value="Weapons Overview" /></form></div>
+
+
+</center>
+
+<br></br>
+	
+
+<table>
+	<tr>
+		<th colspan="16"><center> Military Assets Overview</center></th>
+	</tr>
+ {% for nation in playerWar %}
+  <tr >
+    <td colspan="16" style="background-color: grey; color: white;"><center>{{nation.country}} </center></td>
+ 	
+  </tr>
+<tr>
+	<td>{{nation.wOne}}</td>
+	<td>{{nation.wOneAmount}}</td>
+
+	<td>{{nation.wTwo}}</td>
+	<td>{{nation.wTwoAmount}}</td>
+
+	<td>{{nation.wThree}}</td>
+	<td>{{nation.wThreeAmount}}</td>
+
+	<td>{{nation.wFour}}</td>
+	<td>{{nation.wFourAmount}}</td>
+
+	<td>{{nation.wFive}}</td>
+	<td>{{nation.wSixAmount}}</td>
+
+	<td>{{nation.wSix}}</td>
+	<td>{{nation.wSixAmount}}</td>
+
+	<td>{{nation.wSeven}}</td>
+	<td>{{nation.wSevenAmount}}</td>
+
+	<td>{{nation.wEight}}</td>
+	<td>{{nation.wEightAmount}}</td>
+</tr>
+{% endfor%}
+
+</table>	
+<br> 
+<form method="post" action="/LeaderBoard">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+ </div>
+
+
+{% endblock %}
