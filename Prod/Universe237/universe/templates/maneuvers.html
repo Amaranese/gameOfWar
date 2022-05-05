@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Welcome to the Ministry of War </title>
+
+<style> body { background: url("../static/css/backgrounds/naval.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: darken;
+    background-size: cover;
+
+}
+
+
+table {
+  border-collapse: collapse;
+  background-color: #778484;
+  width: 80%;
+}
+
+th {background-color: #0066ff; color: white;}
+th, td {
+  padding: 8px;
+  text-align: left;	
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#4287f5;}
+
+ </style>
+
+
+{% endblock %}
+{% block body %}
+<center style="color:white"><h1>  ⚔️ ⚔️ MILITARY MANEUVRES HQ 🔫🔫 </h1> </center>
+<center style="color:white">
+<b>My Team: </b>  {{ myNation.country }} <br>
+<b>Year:    </b> {{year}} <br>
+<b>Might:  </b>  {{ myNation.might }} <br>
+<b>Rank:  </b>  {{ myNation.wLevel }} <br>
+<b>FirePower:  </b>  {{ myNation.firePower }} <br>
+
+</center>
+
+ {% if "combat" in displayFlag %}
+
+<br></br>
+<table style="width: 30%;">
+<tr>
+	<th><b>Unit</b></th>
+	<th><b>Owned</b></th>
+</tr>
+<tr>
+<td><b>{{myWar.wOne}}</b></td>
+<td>{{myWar.wOneAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wTwo}}</b></td>
+<td>{{myWar.wTwoAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wThree}}</b></td>
+<td>{{myWar.wThreeAmount}}</td>
+</tr>
+	
+<tr>
+<td><b>{{myWar.wFour}}</b></td>
+<td>{{myWar.wFourAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wFive}}</b></td>
+<td>{{myWar.wFiveAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSix}}</b></td>
+<td>{{myWar.wSixAmount}}</td>
+</tr>
+
+<tr>
+<td><b>{{myWar.wSeven}}</b></td>
+<td>{{myWar.wSevenAmount}}</td>
+</tr>
+
+</table>
+
+<br></br>
+{% endif%}
+
+
+ {% if "drill" in displayFlag %}
+
+
+<br></br>
+<center> <b style="color:blue;" >Chose a Branch to Train </b> </center> 
+<form method="post" action="/maneuvers" >
+		<button name="division" type="submit" value="Light Units" style="width: 20%;">Light Units</button>
+		<button name="division" type="submit" value="Core Division" style="width: 20%;">Core Division</button>
+		<button name="division" type="submit" value="Heavy Forces" style="width: 20%;">Heavy Forces</button>
+ </div>
+
+<br></br>
+
+
+{% endif%}
+
+ {% if "intensity" in displayFlag %}
+
+<br></br>
+<center> <b style="color:red;" >{{ message }} </b> </center> 
+<center> <b style="color:Grey;" >Chose an intensity. </b> </center> 
+<form method="post" action="/maneuvers">
+		<button name="intensity" type="submit" value="soft" style="width: 20%;">Soft</button>
+		<button name="intensity" type="submit" value="medium"style="width: 20%;">Medium</button>
+		<button name="intensity" type="submit" value="hard"style="width: 20%;">Hard</button>
+		<button name="info" type="submit" value="info"style="width: 20%;">More Information</button>
+ </div>
+
+<br></br>
+{% endif%}
+
+
+
+
+<form method="post" action="/maneuvers">
+		<button name="drill" type="submit" value="drill">Drill your Forces</button>
+		<button name="joint" type="submit" value="joint">Joint Maneuvers</button>
+		<button name="initmidate" type="submit" value="initmidate">Intimidatory Maneuvers</button>
+ </div>
+
+<br></br>
+<br></br>
+
+ 
+ <form method="post" action="/maneuvers">
+		<button name="mainMenu" type="submit" value="mainMenu">Return</button>
+				<button name="review" type="submit" value="review">Detailed Forces Review</button>
+ </div>
+ <br></br>
+<center style="color:white">
+<b>Moves:  </b> {{ movesLeft }}</center> <br>
+{% endblock %}
