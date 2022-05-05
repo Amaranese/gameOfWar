@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Menu</title>
+<link rel="stylesheet" href="../static/css/ticker.css">
+<style> body { background: url("../static/css/backgrounds/minimal.jpeg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    background-size: cover;
+
+} </style>
+
+
+{% endblock %}
+{% block body %}
+<center style='color: white;'><h1> Main Menu </h1> </center>
+<center style='color: white;'>
+<div style="display: inline-block;"> <b>My Team: </b>  {{ myNation.country }} <br></div>
+<div style="display: inline-block;"><b>Date:    </b> {{month}} {{year}} <br></div>
+<div style="display: inline-block;"><b>Score:  </b>  {{ myNation.score }} <br></div></div>
+</center>
+<br>
+
+
+<form method="post" action="/mainMenu" >
+		<button name="LB" type="submit" value="LB" style="height: 40px;"><b>View Leaderboard</b></button>
+		<button name="FB" type="submit" value="FB" style="height: 40px;"><b>Finance bureau</b></button>
+		<button name="T" type="submit" value="T" style="height: 40px;"><b>Technology Institute</b></button>
+		<button name="MW" type="submit" value="MW" style="height: 40px;"><b>Ministry of War</b></button>
+		<button name="PC" type="submit" value="PC" style="height: 40px; background-color: grey; color: white"><b>Political Cabinet (not available)</b></button>
+		<button name="N" type="submit" value="N" style="height: 40px;"><b>Next Year</b></button>
+ </div>
+
+<br></br>
+
+{% if "notes" in displayFlag %}
+{% for note in notes %}
+
+<center> <b style="color:blue;" >{{ note }} </b> </center> 
+
+{% endfor %}
+{% endif %}
+
+<br></br>
+
+ 
+ <form method="post" action="/mainMenu">
+		<button name="options" type="submit" value="LB" style="background-color: black; color: white">Options</button>
+		<button name="udpates" type="submit" value="FB" style="background-color: black; color: white">Updates</button>
+		<button name="exit" type="submit" value="MW" style = "background-color: black; color: white">Exit</button>
+ </div>
+ <br></br>
+<center style="color: white">
+<h3>Moves:   {{ movesLeft }} </h3></center> <br>
+
+  
+  <div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
+  	{% for update in updates %}
+    <div class="ticker-item">{{ update }}</div>
+    {% endfor %}
+  </div></div></div>
+
+
+
+{% endblock %}
