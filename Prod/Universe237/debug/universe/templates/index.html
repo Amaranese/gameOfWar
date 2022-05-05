@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Finance Beuro</title>
+
+<style> body { background: url("../static/css/backgrounds/blue.jpg");
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: darken;
+    background-size: cover;
+
+}
+
+ </style>
+{% endblock %}
+
+{% block body %}
+<center style='color:white'><h1> Welcome to Universe 237 </h1> </center>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<center>
+	<div class="form">
+	<form action="/begin" method="POST">
+		<input type="text" name="begin" id="begin" style="height: 30px;">
+		<input type="submit" value="What is your name?" style="height: 30px;">
+	</form>
+</center>
+	<br>
+</center>
+<br></br>
+<br></br>
+
+ 
+ <br></br>
+
+{% endblock %}
+
